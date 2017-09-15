@@ -1,0 +1,15 @@
+PODS:
+  - Apsara (1.0.1)
+  - TextFieldEffects (1.3.3)
+
+DEPENDENCIES:
+  - Apsara
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Apsara: 1868c38231974af29b68c840ada9313a16290ed7
+  TextFieldEffects: 8706f53525f1ce51c8921b7af32237caab50c467
+
+PODFILE CHECKSUM: 77284f856431a4eb967b8a752ee0b1fed3252393
+
+COCOAPODS: 1.2.1

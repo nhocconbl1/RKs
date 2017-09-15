@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20A9F3BF38D45C1FD2DB896C6F1E515C /* CApsaraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A96556C9982CFEC17C3EB86B6D1D7C /* CApsaraView.swift */; };
+		253A4B793DB9FFA9CB3729DDBABB36C4 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC014CE760DDA698B32CC923C433A774 /* TextFieldEffects-dummy.m */; };
+		3E21713197458BA82475E548D57CABB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		41A9EF615EF57B3CB766486D1E773A64 /* ApsaraImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E514DEE4240F9C767D0B3A675B34A73D /* ApsaraImageView.swift */; };
+		48B078FB26D7B0ED5A544C25C4F84F98 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B138E093C74227D94AEAA5FD2556E0 /* TextFieldEffects.swift */; };
+		4D9049A750075258E40EA60EAF27B3A1 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8118C89D5EB34A9B3E07895245BC09D /* AkiraTextField.swift */; };
+		59B3A7228C02A13BDB9EF3D7ECF9D76E /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF7F2FE899B6AB5C22B591A6F8F5F1 /* JiroTextField.swift */; };
+		5C77DAFE972D0271627E433199CD39F2 /* Apsara-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF7B54335C00F6C40ECA1C281FCF1F /* Apsara-dummy.m */; };
+		60D09A1B068D1521610F7B05C2F317DD /* Pods-AMLoginSingup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C591FE219312E1926816205F95186B /* Pods-AMLoginSingup-dummy.m */; };
+		63275DC4DD4DCD61DAE7BFC1904BB597 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		6D1E767D20A965AA332BC97C8B1A1F3B /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138E7B83B712A00925D3B56ACCCE22F8 /* HoshiTextField.swift */; };
+		798F2FCE2F537D9E3483EF6E7EA2A7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		862D7DFBA95EC0ED914CD15C49CEFCCB /* Pods-AMLoginSingup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E46C64D6EAC8FA1469AA6A1210D679 /* Pods-AMLoginSingup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AD48740509ECE017F9C5E902041BE28 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B92882B374144C085C4B398C75214B3 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98BD74B291A73A05AFFB6464A079C511 /* Apsara-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABDD65E9A6D12D7DDC0AD48A21B3C51 /* Apsara-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A76BB2FDAB96517AFD82BF37EA82926 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CFDC6D5B44FA34F9411BC1BBA9A473 /* IsaoTextField.swift */; };
+		B44989670D6ECF16283B44BF80EF73BE /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761DBD8A580FA68641B03572C6F4B4F /* MadokaTextField.swift */; };
+		B76D3A3C471D13DBD25FBFC8EC0A5F6D /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2177D8B05C7B257D465C1CEE348DAF6 /* YokoTextField.swift */; };
+		CF19C41B9B7386ABAD71E1C50233F17A /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CA09E19695CD409371B2A5CBFD0C6 /* MinoruTextField.swift */; };
+		D61CC291071687E05A551AC9FEA8231F /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07546BB9025DAD188F31AFB3324C70 /* KaedeTextField.swift */; };
+		DB0199A79FBA7D24B84616A34D231F44 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098CA25B528C3B84DA2D1DA701AFDA9 /* YoshikoTextField.swift */; };
+		E87B08900994B81A29AD04DBA01EBE92 /* ApsaraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A3B14D5697B9BD8139321DE2443E2 /* ApsaraTextField.swift */; };
+		F445C8DBED63B4CD059193AB6A078692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F8C7F750B331063081ECDBBB0C1E51A6 /* ApsaraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D665B240987FFBE1A30959F27DB640 /* ApsaraButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C148E8AD77F97C1CE1F6BC5AE5E84B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD183885DC07723B10AD07D700F80C0D;
+			remoteInfo = Apsara;
+		};
+		BEDA8F5EFAD480CDF0BE4820797FD3C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E877B7354B2CCFAB2AF7B02DE6CBD818;
+			remoteInfo = TextFieldEffects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0098CA25B528C3B84DA2D1DA701AFDA9 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		029D7525BD5C40C0F57A341EF2FCDCB6 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		0BC7D6A8C07CE3C0090C51434B2AF059 /* Apsara.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Apsara.xcconfig; sourceTree = "<group>"; };
+		138E7B83B712A00925D3B56ACCCE22F8 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		16133960711DB54403C58A60E3B799C3 /* Apsara.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Apsara.modulemap; sourceTree = "<group>"; };
+		19C5AEB9A48DAD7E4FEB2438D028F232 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21AF7B54335C00F6C40ECA1C281FCF1F /* Apsara-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apsara-dummy.m"; sourceTree = "<group>"; };
+		30C4A8AD0E9740718541863A1BD42B69 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		320CA09E19695CD409371B2A5CBFD0C6 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		32E646BF9F8742265E0C589EE5E2219E /* Pods-AMLoginSingup-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMLoginSingup-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CBEED7991240AEA4064C5475D3F21DF /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFF7F2FE899B6AB5C22B591A6F8F5F1 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		4761DBD8A580FA68641B03572C6F4B4F /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		47D5CAC9B90D01E012887ED784B8D2FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480C11CBDD23DB3F1A75A18D7035BE51 /* Pods-AMLoginSingup-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMLoginSingup-frameworks.sh"; sourceTree = "<group>"; };
+		4E8785F0FC8658F076B97D1B561CBBDD /* Apsara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Apsara.framework; path = Apsara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		512666890428561F6DDEBE68FF2E1826 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B138E093C74227D94AEAA5FD2556E0 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		5B1CF34339E7811E5A9DA23CA7EE5C21 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		65A2288379633C18DEC0CDF3C19F9965 /* Pods-AMLoginSingup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AMLoginSingup.modulemap"; sourceTree = "<group>"; };
+		6ABDD65E9A6D12D7DDC0AD48A21B3C51 /* Apsara-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apsara-umbrella.h"; sourceTree = "<group>"; };
+		6B92882B374144C085C4B398C75214B3 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		78B46A9911A8DB22E4850AABEABDD657 /* Pods_AMLoginSingup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AMLoginSingup.framework; path = "Pods-AMLoginSingup.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D665B240987FFBE1A30959F27DB640 /* ApsaraButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApsaraButton.swift; path = Apsara/Classes/ApsaraButton.swift; sourceTree = "<group>"; };
+		86A96556C9982CFEC17C3EB86B6D1D7C /* CApsaraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CApsaraView.swift; path = Apsara/Classes/CApsaraView.swift; sourceTree = "<group>"; };
+		8A806F480C21F979B0380C1129472E3F /* Pods-AMLoginSingup-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMLoginSingup-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F07546BB9025DAD188F31AFB3324C70 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		A12A3B14D5697B9BD8139321DE2443E2 /* ApsaraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApsaraTextField.swift; path = Apsara/Classes/ApsaraTextField.swift; sourceTree = "<group>"; };
+		A4CFDC6D5B44FA34F9411BC1BBA9A473 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		AC014CE760DDA698B32CC923C433A774 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		B4C591FE219312E1926816205F95186B /* Pods-AMLoginSingup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMLoginSingup-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B6CF14B7721A2446EB91A9481136A4F6 /* Pods-AMLoginSingup-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMLoginSingup-resources.sh"; sourceTree = "<group>"; };
+		B8118C89D5EB34A9B3E07895245BC09D /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		D1B75E5590C026AADAFBCBD4F432E2E8 /* Apsara-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apsara-prefix.pch"; sourceTree = "<group>"; };
+		D2177D8B05C7B257D465C1CEE348DAF6 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D98127AFB117017E75EEE0C78349C786 /* Pods-AMLoginSingup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMLoginSingup.debug.xcconfig"; sourceTree = "<group>"; };
+		DE92F76B1DF2BE0BC5D69CABFD35B41B /* Pods-AMLoginSingup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMLoginSingup.release.xcconfig"; sourceTree = "<group>"; };
+		E514DEE4240F9C767D0B3A675B34A73D /* ApsaraImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApsaraImageView.swift; path = Apsara/Classes/ApsaraImageView.swift; sourceTree = "<group>"; };
+		F7E46C64D6EAC8FA1469AA6A1210D679 /* Pods-AMLoginSingup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMLoginSingup-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D897E47BEC99C832A3B0E39890437C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F445C8DBED63B4CD059193AB6A078692 /* Foundation.framework in Frameworks */,
+				798F2FCE2F537D9E3483EF6E7EA2A7F4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D854CD304F187CECB2DFB7C39F3658E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63275DC4DD4DCD61DAE7BFC1904BB597 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3440D564C04654E3E5E2AAC034DEC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E21713197458BA82475E548D57CABB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		339B6905DBD7C9CA9EC9A7981EFE0910 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19C5AEB9A48DAD7E4FEB2438D028F232 /* Info.plist */,
+				029D7525BD5C40C0F57A341EF2FCDCB6 /* TextFieldEffects.modulemap */,
+				5B1CF34339E7811E5A9DA23CA7EE5C21 /* TextFieldEffects.xcconfig */,
+				AC014CE760DDA698B32CC923C433A774 /* TextFieldEffects-dummy.m */,
+				30C4A8AD0E9740718541863A1BD42B69 /* TextFieldEffects-prefix.pch */,
+				6B92882B374144C085C4B398C75214B3 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		3AC9EF18F612E24029FA2CE8B5ECD761 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				79DBEB105C8EE4EF546513AE945DC720 /* Pods-AMLoginSingup */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		471758D96A7C6313104A8CDFAD3DB3F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16133960711DB54403C58A60E3B799C3 /* Apsara.modulemap */,
+				0BC7D6A8C07CE3C0090C51434B2AF059 /* Apsara.xcconfig */,
+				21AF7B54335C00F6C40ECA1C281FCF1F /* Apsara-dummy.m */,
+				D1B75E5590C026AADAFBCBD4F432E2E8 /* Apsara-prefix.pch */,
+				6ABDD65E9A6D12D7DDC0AD48A21B3C51 /* Apsara-umbrella.h */,
+				512666890428561F6DDEBE68FF2E1826 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Apsara";
+			sourceTree = "<group>";
+		};
+		51DDE047B2E1B89C87A7AABF99B8D063 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				B8118C89D5EB34A9B3E07895245BC09D /* AkiraTextField.swift */,
+				138E7B83B712A00925D3B56ACCCE22F8 /* HoshiTextField.swift */,
+				A4CFDC6D5B44FA34F9411BC1BBA9A473 /* IsaoTextField.swift */,
+				3FFF7F2FE899B6AB5C22B591A6F8F5F1 /* JiroTextField.swift */,
+				9F07546BB9025DAD188F31AFB3324C70 /* KaedeTextField.swift */,
+				4761DBD8A580FA68641B03572C6F4B4F /* MadokaTextField.swift */,
+				320CA09E19695CD409371B2A5CBFD0C6 /* MinoruTextField.swift */,
+				56B138E093C74227D94AEAA5FD2556E0 /* TextFieldEffects.swift */,
+				D2177D8B05C7B257D465C1CEE348DAF6 /* YokoTextField.swift */,
+				0098CA25B528C3B84DA2D1DA701AFDA9 /* YoshikoTextField.swift */,
+				339B6905DBD7C9CA9EC9A7981EFE0910 /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		79DBEB105C8EE4EF546513AE945DC720 /* Pods-AMLoginSingup */ = {
+			isa = PBXGroup;
+			children = (
+				47D5CAC9B90D01E012887ED784B8D2FE /* Info.plist */,
+				65A2288379633C18DEC0CDF3C19F9965 /* Pods-AMLoginSingup.modulemap */,
+				32E646BF9F8742265E0C589EE5E2219E /* Pods-AMLoginSingup-acknowledgements.markdown */,
+				8A806F480C21F979B0380C1129472E3F /* Pods-AMLoginSingup-acknowledgements.plist */,
+				B4C591FE219312E1926816205F95186B /* Pods-AMLoginSingup-dummy.m */,
+				480C11CBDD23DB3F1A75A18D7035BE51 /* Pods-AMLoginSingup-frameworks.sh */,
+				B6CF14B7721A2446EB91A9481136A4F6 /* Pods-AMLoginSingup-resources.sh */,
+				F7E46C64D6EAC8FA1469AA6A1210D679 /* Pods-AMLoginSingup-umbrella.h */,
+				D98127AFB117017E75EEE0C78349C786 /* Pods-AMLoginSingup.debug.xcconfig */,
+				DE92F76B1DF2BE0BC5D69CABFD35B41B /* Pods-AMLoginSingup.release.xcconfig */,
+			);
+			name = "Pods-AMLoginSingup";
+			path = "Target Support Files/Pods-AMLoginSingup";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				C57178CC97BA3A71C632EE8659158B0F /* Pods */,
+				A15DE1D34558C3A7C87AB618772ADF2B /* Products */,
+				3AC9EF18F612E24029FA2CE8B5ECD761 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A15DE1D34558C3A7C87AB618772ADF2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E8785F0FC8658F076B97D1B561CBBDD /* Apsara.framework */,
+				78B46A9911A8DB22E4850AABEABDD657 /* Pods_AMLoginSingup.framework */,
+				3CBEED7991240AEA4064C5475D3F21DF /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A216B2266CB48F84538DCA7981FFE0C2 /* Apsara */ = {
+			isa = PBXGroup;
+			children = (
+				80D665B240987FFBE1A30959F27DB640 /* ApsaraButton.swift */,
+				E514DEE4240F9C767D0B3A675B34A73D /* ApsaraImageView.swift */,
+				A12A3B14D5697B9BD8139321DE2443E2 /* ApsaraTextField.swift */,
+				86A96556C9982CFEC17C3EB86B6D1D7C /* CApsaraView.swift */,
+				471758D96A7C6313104A8CDFAD3DB3F2 /* Support Files */,
+			);
+			name = Apsara;
+			path = Apsara;
+			sourceTree = "<group>";
+		};
+		C57178CC97BA3A71C632EE8659158B0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A216B2266CB48F84538DCA7981FFE0C2 /* Apsara */,
+				51DDE047B2E1B89C87A7AABF99B8D063 /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D135031EB17D674F52A9D129CDECED4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862D7DFBA95EC0ED914CD15C49CEFCCB /* Pods-AMLoginSingup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A464FFF20DAB282EFCD807DCAF40CAFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD48740509ECE017F9C5E902041BE28 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED429F4EBE69222C9E117DD4EA687E76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BD74B291A73A05AFFB6464A079C511 /* Apsara-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A4343B9AF4BA99D2D35C4FDB850D4DE /* Pods-AMLoginSingup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 382BB3B1E7C0A482349C19F7E46A1A3C /* Build configuration list for PBXNativeTarget "Pods-AMLoginSingup" */;
+			buildPhases = (
+				EFFBEDB59C63B9DB466D26354EE56C0B /* Sources */,
+				F3440D564C04654E3E5E2AAC034DEC67 /* Frameworks */,
+				4D135031EB17D674F52A9D129CDECED4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE012ACE0EA11B26906F7F064C328D03 /* PBXTargetDependency */,
+				A5712AF65612DF00FCA2048242A9D592 /* PBXTargetDependency */,
+			);
+			name = "Pods-AMLoginSingup";
+			productName = "Pods-AMLoginSingup";
+			productReference = 78B46A9911A8DB22E4850AABEABDD657 /* Pods_AMLoginSingup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD183885DC07723B10AD07D700F80C0D /* Apsara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E7C978B26161ED0E3804665225397C /* Build configuration list for PBXNativeTarget "Apsara" */;
+			buildPhases = (
+				0102FAA3209A7D5737ED85F9748112C8 /* Sources */,
+				9D897E47BEC99C832A3B0E39890437C4 /* Frameworks */,
+				ED429F4EBE69222C9E117DD4EA687E76 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Apsara;
+			productName = Apsara;
+			productReference = 4E8785F0FC8658F076B97D1B561CBBDD /* Apsara.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E877B7354B2CCFAB2AF7B02DE6CBD818 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4394A71698C4BC18CB0FBFFDAE52A0F1 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				06434CB3992E9F1B2493A20D19C83524 /* Sources */,
+				D854CD304F187CECB2DFB7C39F3658E2 /* Frameworks */,
+				A464FFF20DAB282EFCD807DCAF40CAFA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 3CBEED7991240AEA4064C5475D3F21DF /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A15DE1D34558C3A7C87AB618772ADF2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD183885DC07723B10AD07D700F80C0D /* Apsara */,
+				1A4343B9AF4BA99D2D35C4FDB850D4DE /* Pods-AMLoginSingup */,
+				E877B7354B2CCFAB2AF7B02DE6CBD818 /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0102FAA3209A7D5737ED85F9748112C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C77DAFE972D0271627E433199CD39F2 /* Apsara-dummy.m in Sources */,
+				F8C7F750B331063081ECDBBB0C1E51A6 /* ApsaraButton.swift in Sources */,
+				41A9EF615EF57B3CB766486D1E773A64 /* ApsaraImageView.swift in Sources */,
+				E87B08900994B81A29AD04DBA01EBE92 /* ApsaraTextField.swift in Sources */,
+				20A9F3BF38D45C1FD2DB896C6F1E515C /* CApsaraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06434CB3992E9F1B2493A20D19C83524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9049A750075258E40EA60EAF27B3A1 /* AkiraTextField.swift in Sources */,
+				6D1E767D20A965AA332BC97C8B1A1F3B /* HoshiTextField.swift in Sources */,
+				9A76BB2FDAB96517AFD82BF37EA82926 /* IsaoTextField.swift in Sources */,
+				59B3A7228C02A13BDB9EF3D7ECF9D76E /* JiroTextField.swift in Sources */,
+				D61CC291071687E05A551AC9FEA8231F /* KaedeTextField.swift in Sources */,
+				B44989670D6ECF16283B44BF80EF73BE /* MadokaTextField.swift in Sources */,
+				CF19C41B9B7386ABAD71E1C50233F17A /* MinoruTextField.swift in Sources */,
+				253A4B793DB9FFA9CB3729DDBABB36C4 /* TextFieldEffects-dummy.m in Sources */,
+				48B078FB26D7B0ED5A544C25C4F84F98 /* TextFieldEffects.swift in Sources */,
+				B76D3A3C471D13DBD25FBFC8EC0A5F6D /* YokoTextField.swift in Sources */,
+				DB0199A79FBA7D24B84616A34D231F44 /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFBEDB59C63B9DB466D26354EE56C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D09A1B068D1521610F7B05C2F317DD /* Pods-AMLoginSingup-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5712AF65612DF00FCA2048242A9D592 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = E877B7354B2CCFAB2AF7B02DE6CBD818 /* TextFieldEffects */;
+			targetProxy = BEDA8F5EFAD480CDF0BE4820797FD3C2 /* PBXContainerItemProxy */;
+		};
+		AE012ACE0EA11B26906F7F064C328D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Apsara;
+			target = CD183885DC07723B10AD07D700F80C0D /* Apsara */;
+			targetProxy = 4C148E8AD77F97C1CE1F6BC5AE5E84B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		200C6AB0990FCE152A518647F2D847A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC7D6A8C07CE3C0090C51434B2AF059 /* Apsara.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Apsara/Apsara-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apsara/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Apsara/Apsara.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Apsara;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BEABD825215C7DD3B228F78A0F65427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98127AFB117017E75EEE0C78349C786 /* Pods-AMLoginSingup.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AMLoginSingup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMLoginSingup/Pods-AMLoginSingup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AMLoginSingup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB0447A485B7778A35176F6D3F825696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC7D6A8C07CE3C0090C51434B2AF059 /* Apsara.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Apsara/Apsara-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apsara/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Apsara/Apsara.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Apsara;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD79E84EEFA245B3EFB522C56B94805F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1CF34339E7811E5A9DA23CA7EE5C21 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEE452869DC4E57D22443BBF4F354595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE92F76B1DF2BE0BC5D69CABFD35B41B /* Pods-AMLoginSingup.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AMLoginSingup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMLoginSingup/Pods-AMLoginSingup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AMLoginSingup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B17C6D516F7A0087B5639B5EA38513EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1CF34339E7811E5A9DA23CA7EE5C21 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		382BB3B1E7C0A482349C19F7E46A1A3C /* Build configuration list for PBXNativeTarget "Pods-AMLoginSingup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEABD825215C7DD3B228F78A0F65427 /* Debug */,
+				AEE452869DC4E57D22443BBF4F354595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4394A71698C4BC18CB0FBFFDAE52A0F1 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD79E84EEFA245B3EFB522C56B94805F /* Debug */,
+				B17C6D516F7A0087B5639B5EA38513EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E7C978B26161ED0E3804665225397C /* Build configuration list for PBXNativeTarget "Apsara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200C6AB0990FCE152A518647F2D847A7 /* Debug */,
+				AB0447A485B7778A35176F6D3F825696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

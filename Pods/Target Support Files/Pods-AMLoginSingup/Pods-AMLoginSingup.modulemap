@@ -1,0 +1,6 @@
+framework module Pods_AMLoginSingup {
+  umbrella header "Pods-AMLoginSingup-umbrella.h"
+
+  export *
+  module * { export * }
+}
