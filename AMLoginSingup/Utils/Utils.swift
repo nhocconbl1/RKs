@@ -27,4 +27,8 @@ extension UIColor {
             a: a
         )
     }
+    class func ButtonColor() -> UIColor {
+        return UIColor.init(rgb: 0xC471F4, a: 1)
+    }
 }
+

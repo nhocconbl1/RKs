@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import SwiftValidator
 
 enum AMLoginSignupViewMode {
     case login
     case signup
 }
 
-class ViewController: UIViewController {
+class LoginSignUpViewController: UIViewController {
     
-    
+    let validator = Validator() //Login
+    let validator2 = Validator() //Signup
     let animationDuration = 0.25
     var mode:AMLoginSignupViewMode = .signup
     
@@ -70,10 +72,21 @@ class ViewController: UIViewController {
     
         // set view to login mode
         toggleViewMode(animated: false)
-        
+        ValidatorInit()
         //add keyboard notification
          NotificationCenter.default.addObserver(self, selector: #selector(keyboarFrameChange(notification:)), name: .UIKeyboardWillChangeFrame, object: nil)
     }
+    func ValidatorInit()  {
+        self.validator.registerField(loginEmailInputView.textFieldView, errorLabel: loginEmailInputView.labelView, rules: [RequiredRule(), EmailRule(message: "Invalid email")])
+        self.validator.registerField(loginPasswordInputView.textFieldView, errorLabel: loginPasswordInputView.labelView, rules: [RequiredRule(), MinLengthRule.init(length: 8, message: "Minimum 8 characters"),MaxLengthRule(length:32,message:"Maximum 32 characters")])
+        
+        self.validator2.registerField(signupEmailInputView.textFieldView, errorLabel: signupEmailInputView.labelView, rules: [RequiredRule(), EmailRule(message: "Invalid email")])
+        self.validator2.registerField(signupPasswordInputView.textFieldView, errorLabel: signupPasswordInputView.labelView, rules: [RequiredRule(), MinLengthRule.init(length: 8, message: "Minimum 8 characters"),MaxLengthRule(length:32,message:"Maximum 32 characters")])
+        self.validator2.registerField(signupPasswordConfirmInputView.textFieldView, errorLabel: signupPasswordConfirmInputView.labelView, rules:[ConfirmationRule(confirmField: signupPasswordInputView.textFieldView,message:"Confirm password is incorrect")])
+        
+    }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -88,9 +101,7 @@ class ViewController: UIViewController {
              toggleViewMode(animated: true)
         
         }else{
-        
-            //TODO: login by this data
-            NSLog("Email:\(loginEmailInputView.textFieldView.text) Password:\(loginPasswordInputView.textFieldView.text)")
+             self.validator.validate(self)
         }
     }
     
@@ -99,9 +110,8 @@ class ViewController: UIViewController {
         if mode == .login {
             toggleViewMode(animated: true)
         }else{
+                self.validator2.validate(self)
             
-            //TODO: signup by this data
-            NSLog("Email:\(signupEmailInputView.textFieldView.text) Password:\(signupPasswordInputView.textFieldView.text), PasswordConfirm:\(signupPasswordConfirmInputView.textFieldView.text)")
         }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -226,4 +236,36 @@ class ViewController: UIViewController {
         return true
     }  
 }
+
+extension LoginSignUpViewController:ValidationDelegate{
+    
+    func validationSuccessful() {
+        // submit the form
+        if mode == .login {
+            self.loginEmailInputView.SetupLabel(error: false)
+            self.loginPasswordInputView.SetupLabel(error: false)
+            NSLog("Email:\(loginEmailInputView.textFieldView.text) Password:\(loginPasswordInputView.textFieldView.text)")
+        }else{
+            self.signupEmailInputView.SetupLabel(error: false)
+            self.signupPasswordInputView.SetupLabel(error: false)
+            self.signupPasswordConfirmInputView.SetupLabel(error: false)
+            NSLog("Email:\(signupEmailInputView.textFieldView.text) Password:\(signupPasswordInputView.textFieldView.text), PasswordConfirm:\(signupPasswordConfirmInputView.textFieldView.text)")
+        }
+        
+        
+        
+        
+    }
+    
+    func validationFailed(_ errors:[(Validatable ,ValidationError)]) {
+        // turn the fields to red
+        for (field, error) in errors {
+            
+            error.errorLabel?.textColor = UIColor.red
+            error.errorLabel?.text = error.errorMessage // works if you added labels
+            //            error.errorLabel?.isHidden = false
+        }
+    }
+}
+
 

@@ -7,9 +7,9 @@
 //
 
 import UIKit
-
+import SwiftValidator
 class ResetPasswordViewController: UIViewController {
-    
+        @IBOutlet var EmailTextView: AMInputView!
    @IBOutlet weak var loginButtonTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var logoTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var logoHeightConstraint: NSLayoutConstraint!
@@ -17,12 +17,23 @@ class ResetPasswordViewController: UIViewController {
     @IBOutlet weak var backImageBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var resetButton:UIButton!
      let animationDuration = 0.25
+    
+    let validator = Validator() //Reset
     override func viewDidLoad() {
         super.viewDidLoad()
+        ValidatorInit()
    NotificationCenter.default.addObserver(self, selector: #selector(keyboarFrameChange(notification:)), name: .UIKeyboardWillChangeFrame, object: nil)
+        self.resetButton.addTarget(self, action: #selector(ResetPasswordAction(_:)), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
-
+    func ValidatorInit()  {
+        self.validator.registerField(EmailTextView.textFieldView, errorLabel: EmailTextView.labelView, rules: [RequiredRule(), EmailRule(message: "Invalid email")])
+    
+    }
+    func ResetPasswordAction(_ button:UIButton) {
+        self.validator.validate(self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -91,7 +102,6 @@ class ResetPasswordViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
     
 
     /*
@@ -105,3 +115,23 @@ class ResetPasswordViewController: UIViewController {
     */
 
 }
+extension ResetPasswordViewController:ValidationDelegate{
+    
+    func validationSuccessful() {
+        // submit the form
+            self.EmailTextView.SetupLabel(error: false)
+          
+            NSLog("Email:\(EmailTextView.textFieldView.text)")
+    }
+    
+    func validationFailed(_ errors:[(Validatable ,ValidationError)]) {
+        // turn the fields to red
+        for (field, error) in errors {
+            
+            error.errorLabel?.textColor = UIColor.red
+            error.errorLabel?.text = error.errorMessage // works if you added labels
+            //            error.errorLabel?.isHidden = false
+        }
+    }
+}
+

@@ -121,7 +121,15 @@ import UIKit
         return true
     }
   
-    
+    public func SetupLabel(error:Bool){
+        if error {
+            self.labelView.textColor = .red
+            
+        }else{
+            self.labelView.textColor = .white
+            self.labelView.text = Title
+        }
+    }
    
     
     //MARK: - change view
