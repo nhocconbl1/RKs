@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		164798D59DBAFDB26CA961AF /* Pods_AMLoginSingup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A1C14C4E38A58B048AB3B0 /* Pods_AMLoginSingup.framework */; };
+		8627C4371F7105360037E78B /* SCPopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8627C4361F7105360037E78B /* SCPopDatePicker.swift */; };
+		8627C4391F7106360037E78B /* ThesecondSigupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8627C4381F7106360037E78B /* ThesecondSigupViewController.swift */; };
 		862F78C71F6A3C9000FCCF7D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F78C61F6A3C9000FCCF7D /* ResetPasswordViewController.swift */; };
 		865B02851F6BB9F2007685A1 /* ThefirstSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B02841F6BB9F2007685A1 /* ThefirstSignupViewController.swift */; };
 		86D01E1F1F6BC43300857A92 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D01E1E1F6BC43300857A92 /* Utils.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		03DC2556F453E17438175292 /* Pods-AMLoginSingup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMLoginSingup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMLoginSingup/Pods-AMLoginSingup.debug.xcconfig"; sourceTree = "<group>"; };
+		8627C4361F7105360037E78B /* SCPopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCPopDatePicker.swift; sourceTree = "<group>"; };
+		8627C4381F7106360037E78B /* ThesecondSigupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThesecondSigupViewController.swift; sourceTree = "<group>"; };
 		862F78C61F6A3C9000FCCF7D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		865B02841F6BB9F2007685A1 /* ThefirstSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThefirstSignupViewController.swift; path = ../ThefirstSignupViewController.swift; sourceTree = "<group>"; };
 		86D01E1E1F6BC43300857A92 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
@@ -61,6 +65,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8627C4351F7105170037E78B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8627C4361F7105360037E78B /* SCPopDatePicker.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		926CA1107610E0180E71A63E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +102,7 @@
 		ABA51C7D1DAC9B0C009F209C /* AMLoginSingup */ = {
 			isa = PBXGroup;
 			children = (
+				8627C4351F7105170037E78B /* Frameworks */,
 				ABA51C901DAC9BA2009F209C /* AMInputView */,
 				ABA51C7E1DAC9B0C009F209C /* AppDelegate.swift */,
 				ABA51C801DAC9B0C009F209C /* LoginSignUpViewController.swift */,
@@ -101,6 +114,7 @@
 				865B02841F6BB9F2007685A1 /* ThefirstSignupViewController.swift */,
 				862F78C61F6A3C9000FCCF7D /* ResetPasswordViewController.swift */,
 				86D01E1E1F6BC43300857A92 /* Utils.swift */,
+				8627C4381F7106360037E78B /* ThesecondSigupViewController.swift */,
 			);
 			path = AMLoginSingup;
 			sourceTree = "<group>";
@@ -241,9 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA51C921DAC9BD3009F209C /* AMInputView.swift in Sources */,
+				8627C4371F7105360037E78B /* SCPopDatePicker.swift in Sources */,
 				865B02851F6BB9F2007685A1 /* ThefirstSignupViewController.swift in Sources */,
 				ABA51C811DAC9B0C009F209C /* LoginSignUpViewController.swift in Sources */,
 				ABA51C7F1DAC9B0C009F209C /* AppDelegate.swift in Sources */,
+				8627C4391F7106360037E78B /* ThesecondSigupViewController.swift in Sources */,
 				862F78C71F6A3C9000FCCF7D /* ResetPasswordViewController.swift in Sources */,
 				86D01E1F1F6BC43300857A92 /* Utils.swift in Sources */,
 			);

@@ -22,6 +22,7 @@ class ThefirstSignupViewController: UIViewController {
     @IBOutlet weak var CheckView: UIView!
     @IBOutlet weak var CheckLabel: UILabel!
     let validator = Validator()
+    var work:DispatchWorkItem?
     // ^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9\.\-_?@]+(?<![_.])$
     
     var activityIndicatorView:NVActivityIndicatorView?
@@ -64,22 +65,27 @@ class ThefirstSignupViewController: UIViewController {
     }
     func CheckUsername(_ textField: UITextField) {
         validator.validateField(textField){ error in
+            self.work?.cancel()
             if error == nil {
                 self.activityIndicatorView!.startAnimating()
                 self.CheckLabel.text = "Checking..."
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10) {
-                    
+                self.work = DispatchWorkItem.init(block: {
                     self.activityIndicatorView!.stopAnimating()
-                     self.CheckLabel.text = "Username valid"
-                }
-                
+                    self.CheckLabel.text = "Username valid"
+                    self.AnalyzeCheckUser()
+                })
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: self.work!)
             } else {
                 self.CheckLabel.text = error?.errorMessage
                 self.activityIndicatorView!.stopAnimating()
+                
             }
         }
         
         
+    }
+    func AnalyzeCheckUser()  {
+         print("\(String(describing: self.UsernameTextView.text))")
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
