@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CZPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NVActivityIndicatorView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,22 +47,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>18AB4578181E44E4A64BFFDB71B3CD5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1AFCFA74DD9DB69129297041B3F4FE57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>42B09F5F31608E56B6A40A51D89C0F9E</key>
+		<key>92AEC0A3D0183745424E8667D0E23AC5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>455CCE1D8B17BFBD2F97FCCBD267224C</key>
+		<key>AAF1905A893DE92EE08E662D020DC9CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95E846CCEBA6528A36A3581957026C4D</key>
+		<key>BEC43B54CCAE8DBEE9BE9F312E2B945A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB98C06A5EA8A73649637D7EB05D31D4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F9E9F8C70E299E0FA8DF8A1DB2F73F12</key>
+		<key>FD0EA4E3DD886BC6C7B27855C4BCD3EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

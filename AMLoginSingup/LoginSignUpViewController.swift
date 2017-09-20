@@ -77,6 +77,38 @@ class LoginSignUpViewController: UIViewController {
          NotificationCenter.default.addObserver(self, selector: #selector(keyboarFrameChange(notification:)), name: .UIKeyboardWillChangeFrame, object: nil)
     }
     func ValidatorInit()  {
+        self.validator.styleTransformers(success:{ (validationRule) -> Void in
+            
+           if validationRule.errorLabel == self.loginEmailInputView.labelView {
+             validationRule.errorLabel?.text = "Email"
+            }else{
+                validationRule.errorLabel?.text = "Password"
+            }
+           
+            validationRule.errorLabel?.textColor = UIColor.white
+        }, error:{ (validationError) -> Void in
+            
+            validationError.errorLabel?.textColor = UIColor.red
+            validationError.errorLabel?.text = validationError.errorMessage
+            
+        })
+        self.validator2.styleTransformers(success:{ (validationRule) -> Void in
+            
+            if validationRule.errorLabel == self.signupEmailInputView.labelView {
+                validationRule.errorLabel?.text = "Email"
+            }else if validationRule.errorLabel == self.signupPasswordInputView.labelView{
+                validationRule.errorLabel?.text = "Password"
+            }else{
+                 validationRule.errorLabel?.text = "Confirm Password"
+            }
+            validationRule.errorLabel?.textColor = UIColor.white
+        }, error:{ (validationError) -> Void in
+            
+            validationError.errorLabel?.textColor = UIColor.red
+            validationError.errorLabel?.text = validationError.errorMessage
+            
+        })
+        
         self.validator.registerField(loginEmailInputView.textFieldView, errorLabel: loginEmailInputView.labelView, rules: [RequiredRule(), EmailRule(message: "Invalid email")])
         self.validator.registerField(loginPasswordInputView.textFieldView, errorLabel: loginPasswordInputView.labelView, rules: [RequiredRule(), MinLengthRule.init(length: 8, message: "Minimum 8 characters"),MaxLengthRule(length:32,message:"Maximum 32 characters")])
         
@@ -242,13 +274,10 @@ extension LoginSignUpViewController:ValidationDelegate{
     func validationSuccessful() {
         // submit the form
         if mode == .login {
-            self.loginEmailInputView.SetupLabel(error: false)
-            self.loginPasswordInputView.SetupLabel(error: false)
+         
             NSLog("Email:\(loginEmailInputView.textFieldView.text) Password:\(loginPasswordInputView.textFieldView.text)")
         }else{
-            self.signupEmailInputView.SetupLabel(error: false)
-            self.signupPasswordInputView.SetupLabel(error: false)
-            self.signupPasswordConfirmInputView.SetupLabel(error: false)
+           
             NSLog("Email:\(signupEmailInputView.textFieldView.text) Password:\(signupPasswordInputView.textFieldView.text), PasswordConfirm:\(signupPasswordConfirmInputView.textFieldView.text)")
         }
         
@@ -258,13 +287,7 @@ extension LoginSignUpViewController:ValidationDelegate{
     }
     
     func validationFailed(_ errors:[(Validatable ,ValidationError)]) {
-        // turn the fields to red
-        for (field, error) in errors {
-            
-            error.errorLabel?.textColor = UIColor.red
-            error.errorLabel?.text = error.errorMessage // works if you added labels
-            //            error.errorLabel?.isHidden = false
-        }
+      
     }
 }
 

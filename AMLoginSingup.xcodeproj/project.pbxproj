@@ -13,6 +13,8 @@
 		862F78C71F6A3C9000FCCF7D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F78C61F6A3C9000FCCF7D /* ResetPasswordViewController.swift */; };
 		865B02851F6BB9F2007685A1 /* ThefirstSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B02841F6BB9F2007685A1 /* ThefirstSignupViewController.swift */; };
 		86D01E1F1F6BC43300857A92 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D01E1E1F6BC43300857A92 /* Utils.swift */; };
+		86DC425E1F724F12008D2EF1 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC425D1F724F12008D2EF1 /* EditProfileViewController.swift */; };
+		86DC42601F7265CF008D2EF1 /* ChangepasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC425F1F7265CF008D2EF1 /* ChangepasswordViewController.swift */; };
 		ABA51C7F1DAC9B0C009F209C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA51C7E1DAC9B0C009F209C /* AppDelegate.swift */; };
 		ABA51C811DAC9B0C009F209C /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA51C801DAC9B0C009F209C /* LoginSignUpViewController.swift */; };
 		ABA51C841DAC9B0C009F209C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA51C821DAC9B0C009F209C /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		862F78C61F6A3C9000FCCF7D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		865B02841F6BB9F2007685A1 /* ThefirstSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThefirstSignupViewController.swift; path = ../ThefirstSignupViewController.swift; sourceTree = "<group>"; };
 		86D01E1E1F6BC43300857A92 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		86DC425D1F724F12008D2EF1 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		86DC425F1F7265CF008D2EF1 /* ChangepasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangepasswordViewController.swift; sourceTree = "<group>"; };
 		A5A1C14C4E38A58B048AB3B0 /* Pods_AMLoginSingup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMLoginSingup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA51C7B1DAC9B0C009F209C /* AMLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA51C7E1DAC9B0C009F209C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				862F78C61F6A3C9000FCCF7D /* ResetPasswordViewController.swift */,
 				86D01E1E1F6BC43300857A92 /* Utils.swift */,
 				8627C4381F7106360037E78B /* ThesecondSigupViewController.swift */,
+				86DC425D1F724F12008D2EF1 /* EditProfileViewController.swift */,
+				86DC425F1F7265CF008D2EF1 /* ChangepasswordViewController.swift */,
 			);
 			path = AMLoginSingup;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA51C921DAC9BD3009F209C /* AMInputView.swift in Sources */,
+				86DC42601F7265CF008D2EF1 /* ChangepasswordViewController.swift in Sources */,
 				8627C4371F7105360037E78B /* SCPopDatePicker.swift in Sources */,
 				865B02851F6BB9F2007685A1 /* ThefirstSignupViewController.swift in Sources */,
 				ABA51C811DAC9B0C009F209C /* LoginSignUpViewController.swift in Sources */,
@@ -262,6 +269,7 @@
 				8627C4391F7106360037E78B /* ThesecondSigupViewController.swift in Sources */,
 				862F78C71F6A3C9000FCCF7D /* ResetPasswordViewController.swift in Sources */,
 				86D01E1F1F6BC43300857A92 /* Utils.swift in Sources */,
+				86DC425E1F724F12008D2EF1 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
