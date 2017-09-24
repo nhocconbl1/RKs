@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '42B09F5F31608E56B6A40A51D89C0F9E'
+               BlueprintIdentifier = '18AB4578181E44E4A64BFFDB71B3CD5C'
                BlueprintName = 'SlidingText'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SlidingText.framework'>

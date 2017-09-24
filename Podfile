@@ -12,4 +12,5 @@ pod "SlidingText"
 pod 'NVActivityIndicatorView'
 pod 'SnapKit', '~> 3.0.0'
 pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
+pod "CZPicker"
 end
